@@ -14,6 +14,7 @@ namespace SimpleClassExample
 
             // Allocate and configure a Car object.
             Car myCar = new Car();
+            Car chuck = new Car();
             myCar.petName = "Henry";
             myCar.currSpeed = 10;
 
@@ -23,6 +24,9 @@ namespace SimpleClassExample
                 myCar.SpeedUp(5);
                 myCar.PrintState();
             }
+
+            // Prints "Chuck is going 10MPH."
+            chuck.PrintState();
 
             Console.ReadLine();
         }
