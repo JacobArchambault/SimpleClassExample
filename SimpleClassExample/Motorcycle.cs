@@ -9,12 +9,7 @@ namespace SimpleClassExample
     class Motorcycle
     {
         public int driverIntensity;
-
-
-        public void PopAWheely()
-        {
-            Console.WriteLine("Yeee Haaaaaaaeeeeeeeeeeewwww!");
-        }
+        public string name;
 
         // Put back the default constructor, which will set all data members to default values.
         public Motorcycle() { }
@@ -24,5 +19,17 @@ namespace SimpleClassExample
         {
             driverIntensity = intensity;
         }
+
+        public void SetDriverName(string Name)
+        {
+            this.name = name;
+        }
+
+        public void PopAWheely()
+        {
+            Console.WriteLine("Yeee Haaaaaaaeeeeeeeeeeewwww!");
+        }
+
+
     }
 }

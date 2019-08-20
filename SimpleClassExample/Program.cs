@@ -18,10 +18,14 @@ namespace SimpleClassExample
             Car mary = new Car("Mary");
             Car daisy = new Car("Daisy", 75);
             Motorcycle mc = new Motorcycle();
+            Motorcycle c = new Motorcycle(5);
 
             // Change myCar fields.
             myCar.petName = "Henry";
             myCar.currSpeed = 10;
+
+            // Set c's driver name.
+            c.SetDriverName("Tiny");
 
             // Speed up myCar a few times and print out the new state.
             for (int i = 0; i <= 10; i++)
@@ -35,8 +39,10 @@ namespace SimpleClassExample
             mary.PrintState();
             daisy.PrintState();
 
-            // mc pops a wheely.
+            // mc and c pop a wheely.
             mc.PopAWheely();
+            c.PopAWheely();
+            Console.WriteLine("The rider of c is {0}", c.name);
 
             Console.ReadLine();
         }
