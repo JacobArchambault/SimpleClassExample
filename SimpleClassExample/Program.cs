@@ -17,6 +17,7 @@ namespace SimpleClassExample
             Car chuck = new Car();
             Car mary = new Car("Mary");
             Car daisy = new Car("Daisy", 75);
+            Motorcycle mc = new Motorcycle();
 
             // Change myCar fields.
             myCar.petName = "Henry";
@@ -33,6 +34,9 @@ namespace SimpleClassExample
             chuck.PrintState();
             mary.PrintState();
             daisy.PrintState();
+
+            // mc pops a wheely.
+            mc.PopAWheely();
 
             Console.ReadLine();
         }
