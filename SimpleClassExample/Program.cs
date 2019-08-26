@@ -17,8 +17,13 @@ namespace SimpleClassExample
             Car chuck = new Car();
             Car mary = new Car("Mary");
             Car daisy = new Car("Daisy", 75);
+
+            // Motorcycle constructors
             Motorcycle mc = new Motorcycle();
             Motorcycle c = new Motorcycle(5);
+            Motorcycle m1 = new Motorcycle();
+            Motorcycle m2 = new Motorcycle(name: "Tiny");
+            Motorcycle m3 = new Motorcycle(7);
 
             // Change myCar fields.
             myCar.petName = "Henry";
@@ -43,6 +48,9 @@ namespace SimpleClassExample
             mc.PopAWheely();
             c.PopAWheely();
             Console.WriteLine("The rider of c is {0}", c.driverName);
+            Console.WriteLine("Name = {0}, Intensity = {1}", m1.driverName, m1.driverIntensity);
+            Console.WriteLine("Name = {0}, Intensity = {1}", m2.driverName, m2.driverIntensity);
+            Console.WriteLine("Name = {0}, Intensity = {1}", m3.driverName, m3.driverIntensity);
 
             Console.ReadLine();
         }
