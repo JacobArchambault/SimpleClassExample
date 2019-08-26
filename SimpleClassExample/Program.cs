@@ -42,7 +42,7 @@ namespace SimpleClassExample
             // mc and c pop a wheely.
             mc.PopAWheely();
             c.PopAWheely();
-            Console.WriteLine("The rider of c is {0}", c.name);
+            Console.WriteLine("The rider of c is {0}", c.driverName);
 
             Console.ReadLine();
         }
